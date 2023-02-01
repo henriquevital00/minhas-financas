@@ -1,5 +1,6 @@
 package io.github.henriquevital00.minhasfinancas.api.dto;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Builder;
 import lombok.Data;
 
