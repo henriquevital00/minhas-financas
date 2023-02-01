@@ -2,7 +2,10 @@ package io.github.henriquevital00.minhasfinancas.model.entity;
 
 import io.github.henriquevital00.minhasfinancas.model.enums.StatusLancamento;
 import io.github.henriquevital00.minhasfinancas.model.enums.TipoLancamento;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.springframework.data.convert.Jsr310Converters;
 
 import javax.persistence.*;
@@ -12,6 +15,9 @@ import java.time.LocalDate;
 @Entity
 @Table(name = "lancamento", schema = "financas")
 @Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class Lancamento {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

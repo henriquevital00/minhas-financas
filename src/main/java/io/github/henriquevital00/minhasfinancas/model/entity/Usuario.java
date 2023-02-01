@@ -1,5 +1,6 @@
 package io.github.henriquevital00.minhasfinancas.model.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -23,5 +24,6 @@ public class Usuario {
     @Column
     private String email;
     @Column
+    @JsonIgnore
     private String senha;
 }

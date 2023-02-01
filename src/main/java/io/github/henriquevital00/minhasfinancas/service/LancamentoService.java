@@ -12,7 +12,7 @@ public interface LancamentoService {
     Lancamento atualizar(Lancamento lancamento);
     void deletar(Lancamento lancamento);
     List<Lancamento> buscar(Lancamento lancamentoFiltro);
-    void atualziarStatus(Lancamento lancamento, StatusLancamento status);
+    void atualzarStatus(Lancamento lancamento, StatusLancamento status);
     void validar(Lancamento lancamento);
     Optional<Lancamento> findById(Long id);
     BigDecimal obterSaldoPorUsuario(Long id);
